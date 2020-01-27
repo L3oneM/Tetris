@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Cell = ({ type }) => {
-  return <div>Cell</div>;
-};
+import { CellContainer } from './cell.styles';
 
-export default Cell;
+import { TETROMINOS } from '../../helpers/tetrominos';
+
+const Cell = ({ type }) => (
+  <CellContainer type={type} color={TETROMINOS[type].color} />
+);
+
+export default React.memo(Cell);

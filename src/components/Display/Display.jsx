@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { DisplayContainer } from './display.styles';
+
 const Display = ({ gameOver, text }) => {
-  return <div>{text}</div>;
+  return <DisplayContainer gameOver={gameOver}>{text}</DisplayContainer>;
 };
 
 export default Display;

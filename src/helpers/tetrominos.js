@@ -1,4 +1,4 @@
-export const TETRAMINOS = {
+export const TETROMINOS = {
   0: { shape: [[0]], color: '0, 0, 0' },
   I: {
     shape: [
@@ -58,9 +58,9 @@ export const TETRAMINOS = {
   }
 };
 
-export const randomTetraminos = () => {
+export const randomTetramino = () => {
   const tetraminos = 'IJLOSTZ';
   const randomTetramino =
     tetraminos[Math.floor(Math.random() * tetraminos.length)];
-  return TETRAMINOS[randomTetramino];
+  return TETROMINOS[randomTetramino];
 };
